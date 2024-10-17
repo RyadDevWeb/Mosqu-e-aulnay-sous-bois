@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mosquée d'Aulnay-sous-Bois</title>
+    <style>
+        :root {
+            --primary-color: #0d4747;
+            --secondary-color: #1a6e6e;
+            --accent-color: #d4af37;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: var(--text-color);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .contact-form, .contact-info {
+            flex-basis: 48%;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #c19b2e;
+        }
+
+        .contact-info h2 {
+            color: var(--accent-color);
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Contactez-nous</h1>
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <input type="text" name="subject" placeholder="Sujet">
+                    <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Nos coordonnées</h2>
+                <p>Adresse : 123 Rue de la Mosquée, 93600 Aulnay-sous-Bois</p>
+                <p>Téléphone : 01 23 45 67 89</p>
+                <p>Email : contact@mosqueeaulnay.fr</p>
+                <h3>Horaires d'ouverture</h3>
+                <p>Lundi - Vendredi : 9h00 - 21h00</p>
+                <p>Samedi - Dimanche : 10h00 - 20h00</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mosquée d'Aulnay-sous-Bois. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
